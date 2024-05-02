@@ -7,7 +7,6 @@ p {
 
 }
 
-
 #ad {
     position: relative;
     background-image: url(TravelSU_ad_photo);
@@ -36,6 +35,11 @@ p {
 
 #contact_info h2 {
     padding-top: 20px;
+}
+
+#about_us, #contact_info {
+  margin-right: 15%;
+  margin-left:15%;
 }
 
 #about_us, #slideshow-container, #ad, #testimonies, #contact_info {
