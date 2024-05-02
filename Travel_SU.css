@@ -5,26 +5,28 @@ p {
     display: flex;
     justify-content: space-around;
 
-    border: 1px solid black;
 }
 
-.v_container {
-    border: 1px solid black;
-}
 
 #ad {
     position: relative;
     background-image: url(TravelSU_ad_photo);
-    width: 500px;
+    width: 400px;
     height: 500px;
     padding: 10px;
     color: white;
     font-size: xx-large;
+    margin-left:25%;
+}
+
+#testimonies {
+  margin-right:25%;
 }
 
 #sign_up_button {
     position: absolute;
-    bottom: 10px;
+    top: 50%;
+    left: 40%;
     font-size: medium;
     width: 90px;
     height: 40px;
@@ -34,6 +36,10 @@ p {
 
 #contact_info h2 {
     padding-top: 20px;
+}
+
+#about_us, #slideshow-container, #ad, #testimonies, #contact_info {
+  border: 2px solid black;
 }
 
 #about_us h1, #about_us p {
