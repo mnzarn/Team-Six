@@ -24,3 +24,8 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+/* opens link to under construction page */
+function underConstruction() {
+  location.href="Under_Construction.html"
+}
