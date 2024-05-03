@@ -37,18 +37,19 @@ p {
     padding-top: 20px;
 }
 
-#about_us, #contact_info {
+#motto, #contact_info {
   margin-right: 15%;
   margin-left:15%;
 }
 
-#about_us, #slideshow-container, #ad, #testimonies, #contact_info {
+#motto {
+  text-align: center;
+}
+
+#slideshow-container, #ad, #testimonies, #contact_info {
   border: 2px solid black;
 }
 
-#about_us h1, #about_us p {
-    margin: 5px;
-}
 
 /*Slideshow CSS*/
 * {box-sizing: border-box}
