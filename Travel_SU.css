@@ -81,13 +81,14 @@ p {
     padding-top: 20px;
 }
 
-#motto, #contact_info {
+#about_us, #contact_info {
   margin-right: 15%;
   margin-left:15%;
 }
 
-#motto {
+#about_us {
   text-align: center;
+  border: 2px solid black;
 }
 
 #slideshow-container, #ad, #testimonies, #contact_info {
