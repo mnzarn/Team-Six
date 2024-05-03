@@ -218,7 +218,13 @@ p {
     padding-top: 20px;
 }
 
+#contact_info p {
+  padding-top: 7px;
+}
+
 #contact_info {
+  display: flex;
+  justify-content: space-between;
   height: 100px;
   margin-top: 29%;
   border: 2px solid rgb(82, 75, 75);
