@@ -22,6 +22,11 @@ nav a {
     padding: 10px;
 }
 
+.logo {
+    height: 100px;
+    width: auto;
+}
+
 .panel_item {
     text-decoration: none;
     color: white;
