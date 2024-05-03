@@ -16,3 +16,13 @@ function showSlides() {
 function underConstruction() {
   location.href="Under_Construction.html";
 }
+
+function mouseOver(element)
+{
+  element.style.color='white';
+}
+
+function mouseOut(element)
+{
+  element.style.color = 'black';
+}
