@@ -7,14 +7,18 @@
     <body>
         <section class="h1_container">
 
-            <img class="logo" src="TRAVELSU_Logo.PNG">
+            <a href="Travel_SU.html"><img class="logo" src="TRAVELSU_Logo.PNG"></a>
 
-            <button type="button" id="login_button" onclick="underConstruction()"><img class="loginimg" src="loginguy.png" alt="gray person silhouette"> Login</button>
+            <a id="login_button" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" 
+            href="Under_Construction.html"><img class="loginimg" src="loginguy.png" alt="gray person silhouette"> Login</a>
         </section>
-        <section class="v_container" id="about_us">
-
-            <h1>Ride share platform providing safe, reliable transportation for Seattle University students</h1>
-
+        <section class="h2_container">
+            <ul class="nav">
+                <li><a href="Under_Construction.html">Ride</a></li>
+                <li><a href="Under_Construction.html">Drive</a></li>
+                <li><a href="Under_Construction.html">Events</a></li>
+                <li><a href="Under_Construction.html">Contact</a></li>
+            </ul>
         </section>
         <section class="v2_container">
 
@@ -37,35 +41,24 @@
                   <img class="slide" src="slide3.jpg">
                   <div class="text">It's Just A Few Clicks Away</div>
                 </div>
-                
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-                
-                </div>
-                <br>
-                
-            <div class="slidedots">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
             </div>
 
         </section>
-        <section class="h_container">
-            <section id="ad">
+        <section class="adTestimonty">
+            <section class="h_container" id="ad">
                 <h2>Want to ride or drive?</h2>
                 <button type="button" id="sign_up_button" onclick="underConstruction()">Sign Up</button>
             </section>
-            <section id="testimonies">
+            <section class="h_container" id="testimonies">
                 <img class="testimonyPerson" src="testimonyPerson.png">
-                <h3>"I have saved so much money using TravelSU instead of other rideshare apps. Besides that, I've made friends with similar interests, and found my own community. 
+                <h3 class="testimonyText">"Thanks to Travel SU, I have saved so much money. Moreover, I have made friends with similar interests and found my own community. 
                 Thank you TravelSU!"</h3>
             </section>
         </section>
         <section class="h_container" id="contact_info">
             <h2>Have questions?</h2>
             <p>
-                email: <a href="mailto:TravelSU@seattleu.edu">TravelSU@seattleu.edu</a>
+                <a href="mailto:TravelSU@seattleu.edu">Email Us</a>
                 <a href="https://github.com/mnzarn/TravelSU-WebApp">GitHub</a>
             </p>
         </section>
