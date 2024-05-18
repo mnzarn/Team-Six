@@ -12,6 +12,18 @@
   font-size: 20px;
 }
 
+.error {
+  color: rgb(255, 208, 0);
+}
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.signUp .container {
+  padding-bottom: 20px;
+}
+
 #check {
   padding-bottom: 20px;
 }
