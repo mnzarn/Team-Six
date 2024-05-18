@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     </head>
     <body>
+
       <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-body-tertiary">
         <div class="container">
           <a class="navbar-brand" href="index.html"><img src="images/TRAVELSU_Logo.PNG" alt="TravelSU logo" width="160" height="40"></a>
@@ -39,45 +40,56 @@
           </form>
         </div>
       </nav>
+
       <div class="page-container">
+
         <nav class="navbar bg-body-tertiary">
           <div class="container">
             <span class="h1">Welcome to TravelSU!</span>
           </div>
         </nav>
 
-        <form class="signUp" action="Under_Construction.html" method="post">
-            <section class="container">
+        <form class="signUp" id="signUpForm" action="Under_Construction.html" method="post">
+          <section class="container">
               <label for="suID"><b>SeattleU ID</b></label>
-              <input type="text" placeholder="Enter SeattleU ID" name="suID" required>
-
+              <input type="text" placeholder="Enter SeattleU ID" name="suID" id="suID" required>
+              <span class="error" id="suIDError"></span><br>
+  
               <label for="suEmail"><b>SeattleU Email</b></label>
-              <input type="text" placeholder="Enter SeattleU Email" name="suEmail" required>
-
+              <input type="text" placeholder="Enter SeattleU Email" name="suEmail" id="suEmail" required>
+              <span class="error" id="suEmailError"></span><br>
+  
               <label for="fname"><b>First Name</b></label>
-              <input type="text" placeholder="Enter First Name" name="fname" required>
-
+              <input type="text" placeholder="Enter First Name" name="fname" id="fname" required>
+              <span class="error" id="fnameError"></span><br>
+  
               <label for="lname"><b>Last Name</b></label>
-              <input type="text" placeholder="Enter Last Name" name="lname" required>
-              
+              <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required>
+              <span class="error" id="lnameError"></span><br>
+  
               <label for="uname"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="uname" required>
-          
+              <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+              <span class="error" id="unameError"></span><br>
+  
               <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-
+              <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+              <span class="error" id="pswError"></span><br>
+  
               <label for="rePsw"><b>Re-enter Password</b></label>
-              <input type="password" placeholder="Re-enter Password" name="rePsw" required>
-
+              <input type="password" placeholder="Re-enter Password" name="rePsw" id="rePsw" required>
+              <span class="error" id="rePswError"></span><br>
+  
               <label for="driver"><b>Will you be driving? (Can be changed later in Account)</b></label><br>
               <div class="form-check form-check-inline" id="check">
-                <input class="form-check-input" type="checkbox" id="driver" value="option2">
-                <label class="form-check-label" for="driver">Driver</label>
+                  <input class="form-check-input" type="checkbox" id="driver" value="option2">
+                  <label class="form-check-label" for="driver">Driver</label>
               </div><br>
               <button type="submit">Sign Up</button>
-            </section>
-        </form>
+          </section>
+      </form>  
+
       </div>
+
       <!-- Check the CSS file for footer specific styling!!! -->
       <footer class="bg-light text-center ">
         <div class="container p-4">
@@ -112,6 +124,7 @@
         </div>
       </footer>
     </body>
+    <script src="signUp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </html>
