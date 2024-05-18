@@ -1,0 +1,50 @@
+.page-container {
+  background-color: #dc3545;
+  min-height: 100vh;
+}
+
+.logo {
+    height: 65px;
+    width: 250px;
+}
+
+.signUp {
+  font-size: 20px;
+}
+
+#check {
+  padding-bottom: 20px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: rgb(170, 0, 0);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: rgb(139, 0, 0);
+}
+
+/* NEED THESE FOR FOOTER TO LOOK PROPER SO COPY PASTE THESE FOR FOOTER */
+
+.footer {
+  padding-top: 20px;
+  border-top: 2px solid black;
+}
+.footer #logo{
+  padding-bottom: 5px;
+}
