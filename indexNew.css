@@ -1,0 +1,72 @@
+#myCarousel {
+  max-width: 1400px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the carousel horizontally */
+}
+
+.carousel-item img {
+  max-width: 100%; /* Make images responsive */
+  height: auto;
+}
+
+.page-container {
+  background-color: #dc3545;
+}
+
+#myCarousel {
+  background-color: rgb(152, 152, 152);
+}
+
+#myCarousel .carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 10px;
+  display: block !important;
+}
+
+@media (max-width: 767.98px) {
+  #myCarousel .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+#signUp, #testimony, #events {
+  height: 500px;
+  border: 2px solid black;
+  color: rgb(255, 191, 30);
+  margin: 10px 10px;
+  font-weight: bold;
+  background-color: rgb(170,0,0);
+  font-size: large;
+}
+
+#signUp {
+  background-image: url(images/TravelSU_ad_photo.jpg);
+  text-align: center;
+  padding: 185px 0px;
+  font-size: xx-large;
+}
+
+#events {
+  background-image: url(images/TravelSU_events.jpeg);
+  text-align: center;
+  padding: 185px 0px;
+  font-size: xx-large;
+}
+
+/* NEED THESE FOR FOOTER TO LOOK PROPER SO COPY PASTE THESE FOR FOOTER */
+
+.footer {
+  padding-top: 20px;
+  border-top: 2px solid black;
+}
+.footer #logo{
+  padding-bottom: 5px;
+}
+
