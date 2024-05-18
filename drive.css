@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.h_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(170, 0, 0);
+    padding: 10px;
+}
+
+#logo {
+    margin: 0;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+#login_button {
+    background-color: white;
+    color: rgb(170, 0, 0);
+    border: 1px solid rgb(170, 0, 0);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.drive-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid rgb(170, 0, 0);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.drive-form h1 {
+    color: rgb(170, 0, 0);
+    text-align: center;
+}
+
+.drive-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.drive-form input[type="text"],
+.drive-form input[type="date"],
+.drive-form input[type="time"],
+.drive-form input[type="number"],
+.drive-form select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.drive-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.drive-form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.drive-form legend {
+    font-weight: bold;
+    color: rgb(170, 0, 0);
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+}
+
+.counter button {
+    background-color: rgb(170, 0, 0);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.counter input {
+    text-align: center;
+    width: 50px;
+}
+
+#submit-button {
+    display: block;
+    width: 100%;
+    background-color: rgb(170, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+#submit-button:hover {
+    background-color: rgb(140, 0, 0);
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Request a Ride</title>
+    <link rel="stylesheet" href="ride.css">
+</head>
+<body>
+    <section class="h_container" id="header">
+        <a href="index.html" id="logo">
+            <img class="logo" src="TRAVELSU_Logo.PNG" alt="Travel SU Logo">
+        </a>
+        <button type="button" id="login_button">Login</button>
+    </section>
+
+    <section class="request-ride-form">
+        <h1>Request a Ride</h1>
+        <form>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="pickup-zip">Pickup Zip Code:</label>
+            <input type="text" id="pickup-zip" name="pickup-zip" required>
+
+            <label for="pickup-area">Pickup Area Name:</label>
+            <input type="text" id="pickup-area" name="pickup-area" required>
+
+            <label for="time-frame">Time Frame:</label>
+            <input type="time" id="earliest-time" name="earliest-time" required>
+            <input type="time" id="latest-time" name="latest-time" required>
+
+            <label for="destination-zip">Destination Zip Code:</label>
+            <input type="text" id="destination-zip" name="destination-zip" value="98122" required>
+
+            <fieldset>
+                <legend>Recurring Ride:</legend>
+                <input type="checkbox" id="recurring-ride" name="recurring-ride">
+                <label for="recurring-ride">Recurring Ride</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences:</legend>
+                <input type="checkbox" id="no-smoker" name="no-smoker">
+                <label for="no-smoker">No Smoker</label><br>
+                <input type="checkbox" id="no-pets" name="no-pets">
+                <label for="no-pets">No Pets</label><br>
+                <label for="gender">Preferred Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="any">Any</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </fieldset>
+
+            <button type="submit" id="submit-button">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
