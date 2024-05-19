@@ -1,31 +1,242 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Travel SU Home</title>
-    <link rel="stylesheet" href="Travel_SU.css">
+    <title>Events</title>
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <section class="h1_container">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="images/TRAVELSU_Logo.PNG" alt="TravelSU logo" width="160" height="40"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ride.html">Ride</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="drive.html">Drive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <form action="login.html" method="post" class="d-flex">
+            <button class="btn btn-danger" type="submit">
+              <img src="images/loginguy.png" alt="Placeholder profile picture (gray person outline)" width="25" height="25">
+              Login
+            </button>
+          </form>
+        </div>
+    </nav>
 
-        <a href="index.html"><img class="logo" src="images/TRAVELSU_Logo.PNG"></a>
+    <div class="page-container">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container" id="header">
+              <span class="h1">Events around Seattle!</span>
+            </div>
+          </nav>
+        <div class="row row-cols-1 row-cols-md-3 g-6" id="eventsContainer">
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/SIFF.png" class="card-img-top" alt="Seattle International Film Festival flyer">
+                <div class="card-body">
+                  <a href="https://www.siff.net/festival"><h5 class="card-title">Seattle Film Festival</h5></a>
+                  <p class="card-text">Seattle International Film Festival (SIFF) is billed as America's 
+                    largest film festival. Join top directors, actors, and critics who attend 
+                    festival premieres and screenings by buying a single ticket or a pass.</p>
+                    <strong class="card-text">Multiple locations at varying times, May 11th-21st.</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/AnimeImpulse.png" class="card-img-top" alt="Anime Impulse promo flyer">
+                <div class="card-body">
+                  <a href="https://animeimpulse.com"><h5 class="card-title">Anime Impulse</h5></a>
+                  <p class="card-text">Appearing for the first time outside California, Anime Impulse promises cosplay, 
+                    artists, vendors, and industry guests. You must buy the $36 ticket online ($48 both days). No pets or outside food.</p>
+                    <strong class="card-text">705 Pike St. Seattle, WA 98101, May 18th-19th, 11:00 AM to 7:00 PM</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/ThroughTheLookingGlass.jpg" class="card-img-top" alt="Through The Looking Glass show scene">
+                <div class="card-body">
+                  <a href="https://tickets.thetripledoor.net/eventperformances.asp?evt=82"><h5 class="card-title">Through the Looking Glass: The Burlesque Alice in Wonderland</h5></a>
+                  <p class="card-text">Through the Looking Glass: The Burlesque Alice in Wonderland adds bawdy beauty, 
+                    a whirlwind of whimsy, and a melange of music to Lewis Carroll's classic tale.</p>
+                    <strong class="card-text">216 Union St, Seattle, WA 98101 at varying times, May 15th-19th.</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/JetCity.jpg" class="card-img-top" alt="Jet City Roller Derby logo">
+                <div class="card-body">
+                  <a href="https://jetcityrollerderby.com"><h5 class="card-title">Jet City Roller Derby</h5></a>
+                  <p class="card-text">Watch the women of Jet City Roller Derby play an exciting game against Rat City DLF and Dockyard!</p>
+                  <strong class="card-text">200th St SW, Lynnwood, WA 98036, May 18th, 5:00 PM.</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                  <img src="images/LCDSoundsystem.jpg" class="card-img-top" alt="LCD Soundsystem concert flyer">
+                  <div class="card-body">
+                    <a href="https://www.stgpresents.org/calendar/event/5468"><h5 class="card-title">LCD Soundsystem Concert</h5></a>
+                      <strong class="card-text">911 Pine St Seattle, WA 98101 from May 16th-19th at 8 PM.</strong>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                  <img src="images/CarolineRose.jpg" class="card-img-top" alt="Caroline Rose (blonde woman)">
+                  <div class="card-body">
+                    <a href="https://www.showboxpresents.com/events/search?cx=&cof=FORID%3A9&ie=UTF-8&q=caroline+rose"><h5 class="card-title">Caroline Rose Concert</h5></a>
+                    <p class="card-text">Caroline Rose is performing with Ian Sweet and LA FORCE.</p>
+                    <strong class="card-text">1426 First Ave, Seattle, WA 98101, May 18th and 19th at 8:30 PM</strong>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/Microwave.jpg" class="card-img-top" alt="Microwave band standing in a field (Three guys)">
+                <div class="card-body">
+                  <a href="https://www.showboxpresents.com/events/detail/528586"><h5 class="card-title">Microwave Concert</h5></a>
+                  <p class="card-text">Microwave is performing with Origami Angel, Heart Attack Man, Carpool Tunnel.</p>
+                  <strong class="card-text">1426 First Ave, Seattle, WA 98101, May 20th at 7:30 PM</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/GirlInRed.jpg" class="card-img-top" alt="Girl In Red (woman in red beanie)">
+                <div class="card-body">
+                  <a href="https://www.stgpresents.org/calendar/event/5507"><h5 class="card-title">Girl in Red Concert</h5></a>
+                  <p class="card-text">Girl In Red Concert, with tickets going for $40.50, all ages welcome!</p>
+                  <strong class="card-text">911 Pine St Seattle, WA 98101 from May 20th-21st at 8 PM.</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/TheKidLaroi.jpg" class="card-img-top" alt="The Kid LAROI (blonde short haired man)">
+                <div class="card-body">
+                  <a href="https://everout.com/seattle/events/the-kid-laroi/e172389/"><h5 class="card-title">The Kid LAROI Concert</h5></a>
+                  <p class="card-text">The Kid LAROI concert, with tickets going for $50-$55, all ages welcome!</p>
+                  <strong class="card-text">1700 First Ave S, Seattle, WA 98134, May 22nd-23rd at 8 PM.</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/MeltBanana.jpg" class="card-img-top" alt="Melt Banana band (man upside down and woman right side up, both in black with headphones)">
+                <div class="card-body">
+                  <a href="https://everout.com/seattle/events/melt-banana/e169095/"><h5 class="card-title">Melt Banana Concert</h5></a>
+                  <p class="card-text">Melt Banana concert, with tickets going for $26, 21 and over!</p>
+                  <strong class="card-text">2505 First Ave Seattle, WA 98121, May 23rd, at 8 PM.</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/RocMarciano.jpg" class="card-img-top" alt="Roc Marciano (Man with scarf over his head and holding his pinkies up)">
+                <div class="card-body">
+                  <a href="https://everout.com/seattle/events/roc-marciano/e171811/"><h5 class="card-title">Roc Marciano Concert</h5></a>
+                  <p class="card-text">Roc Marciano concert, with tickets going for $30, 21 and over!</p>
+                  <strong class="card-text">2505 First Ave Seattle, WA 98121, May 24th, 6:00-9:00 PM.</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/NorthwestFestival.jpg" class="card-img-top" alt="Crowds of people at Seattle Center">
+                <div class="card-body">
+                  <a href="https://nwfolklife.org/festival/home.html"><h5 class="card-title">Northwest Folklife Festival 2024</h5></a>
+                  <p class="card-text">Northwest Folklife Festival, a free festival with all ages welcome!</p>
+                  <strong class="card-text">305 Harrison St Seattle, WA 98109, May 24th-27th</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/PearlJam.jpg" class="card-img-top" alt="Pearl Jam Dark Matter world tour flyer">
+                <div class="card-body">
+                  <a href="https://everout.com/seattle/events/pearl-jam/e169021/"><h5 class="card-title">Pearl Jam</h5></a>
+                  <p class="card-text">Pearl Jam's Dark Matter World Tour visits Seattle! Seats at varying prices.</p>
+                  <strong class="card-text">305 Harrison St Seattle, WA 98109, multiple dates between May 28 and May 30, 7:30 pm</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/LaLuz.jpg" class="card-img-top" alt="La Luz band (4 women standing with instruments)">
+                <div class="card-body">
+                  <a href="https://everout.com/seattle/events/la-luz/e171192/"><h5 class="card-title">La Luz Concert</h5></a>
+                  <p class="card-text">La Luz concert, with tickets going for $22, 21 and over!</p>
+                  <strong class="card-text">2505 First Ave Seattle, WA 98121, May 30th at 8 PM</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/DinosaurImprov.jpg" class="card-img-top" alt="Dinosaur Improv flyer">
+                <div class="card-body">
+                  <a href="https://www.stgpresents.org/calendar/event/5598"><h5 class="card-title">Dinosaur Improv</h5></a>
+                  <p class="card-text">Dinosaur Improv, with tickets going for $34, all ages welcome!</p>
+                  <strong class="card-text">1303 Northeast 45th Street Seattle, WA 98105, May 31st, at 7 PM</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
 
-        <a id="login_button" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" 
-        href="Under_Construction.html"><img class="loginimg" src="images/loginguy.png" alt="gray person silhouette"> Login</a>
-    </section>
-    <section class="h2_container">
-        <ul class="nav">
-            <li><a href="Under_Construction.html">Ride</a></li>
-            <li><a href="Under_Construction.html">Drive</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="Under_Construction.html">Contact</a></li>
-        </ul>
-    </section>
+       <!-- Check the CSS file for footer specific styling!!! -->
+       <footer class="bg-light text-center ">
+        <div class="container p-4">
+
+          <section class="mb-4">
+            <p>
+              TravelSU is all about creating an easier way to ride-share when it comes to SeattleU students.
+              Public transportation doesn't always go where you need to or the stops might become a nuisance.
+              Ride-sharing apps have very high prices, especially in Seattle. With all this, it's hard to get
+              to the places you need to as a student. With TravelSU, we hope to save students some money by
+              providing rides to places other students may already be going. We also ensure the safety 
+              of all of our users.
+            </p>
+          </section>
+
+          <section class="footer">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a href="index.html"><img id="logo" src="images/TRAVELSU_Logo.PNG" alt="TravelSU logo" width="120" height="30"></a>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a href="Under_Construction.html">Have Questions?</a>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a href="aboutUs.html">About Us</a>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a href="https://github.com/mnzarn/TravelSU-WebApp">GitHub</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </footer>
 </body>
-<section id="contact_info">
-  <h2>Have questions?</h2>
-  <p>
-      <a href="mailto:TravelSU@seattleu.edu">Email Us</a>
-      <a href="https://github.com/mnzarn/TravelSU-WebApp">GitHub</a>
-  </p>
-</section>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </html>
