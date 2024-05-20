@@ -1,0 +1,38 @@
+.page-container {
+  background-color: #dc3545;
+  min-height: 100vh;
+}
+
+.logo {
+    height: 65px;
+    width: 250px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+#header {
+  justify-content: center;
+}
+
+.col {
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+/* NEED THESE FOR FOOTER TO LOOK PROPER SO COPY PASTE THESE FOR FOOTER */
+
+.footer {
+  padding-top: 20px;
+  border-top: 2px solid black;
+}
+.footer #logo{
+  padding-bottom: 5px;
+}
+
+#eventsContainer {
+  max-width: 1000px;
+  margin: auto;
+}

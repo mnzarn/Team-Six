@@ -32,7 +32,7 @@ body {
 
 .request-ride-form {
     max-width: 600px;
-    margin: 40px auto;
+    margin: auto;
     padding: 20px;
     border: 2px solid rgb(170, 0, 0);
     border-radius: 10px;
@@ -92,3 +92,19 @@ body {
 #submit-button:hover {
     background-color: rgb(140, 0, 0);
 }
+
+.page-container {
+    background-color: #dc3545;
+    min-height: 100vh;
+}
+  
+
+/* NEED THESE FOR FOOTER TO LOOK PROPER SO COPY PASTE THESE FOR FOOTER */
+
+.footer {
+    padding-top: 20px;
+    border-top: 2px solid black;
+  }
+  .footer #logo{
+    padding-bottom: 5px;
+  }
