@@ -43,4 +43,14 @@ h1 {
     margin: auto;
     padding: 1%;
 }
+
+/* NEED THESE FOR FOOTER TO LOOK PROPER SO COPY PASTE THESE FOR FOOTER */
+
+.footer {
+    padding-top: 20px;
+    border-top: 2px solid black;
+  }
+  .footer #logo{
+    padding-bottom: 5px;
+  }
     
