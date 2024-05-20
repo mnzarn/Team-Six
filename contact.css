@@ -43,7 +43,7 @@ body {
     padding-bottom: 20px;
   }
   
-  input[type=text] {
+  input[type=text], textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -51,6 +51,7 @@ body {
     border: 1px solid #ccc;
     box-sizing: border-box;
   }
+
   
   button {
     background-color: rgb(170, 0, 0);
