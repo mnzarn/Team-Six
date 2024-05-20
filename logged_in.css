@@ -27,5 +27,5 @@ h1 {
 #routesCarousel .card-img-top {
     height: 15vw; /* Adjust as needed */
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
