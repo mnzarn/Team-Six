@@ -90,7 +90,6 @@ p {
 }
 
 body {font-family: Verdana, sans-serif;}
-form {border: 3px solid #f1f1f1;}
 
 input[type=text], input[type=password] {
   width: 100%;
@@ -123,10 +122,14 @@ button:hover {
 
 .bottomLogin {
   padding: 16px;
+  background-color: #343a40;
   justify-content: space-between; /* Adjust as needed */
   align-items: center;
   display: flex;
   margin-bottom: 0; 
+  margin-top: 140px;
+  color: #9199a1;
+  border-top: 1px solid black;
 }
 
 span.password {
@@ -142,4 +145,23 @@ span.password {
   .cancelbtn {
      width: 100%;
   }
+}
+
+.page-container {
+  background-color: #dc3545;
+  min-height: 60vh;
+}
+
+#login {
+  font-size: 20px;
+}
+
+/* NEED THESE FOR FOOTER TO LOOK PROPER SO COPY PASTE THESE FOR FOOTER */
+
+.footer {
+  padding-top: 20px;
+  border-top: 2px solid black;
+}
+.footer #logo{
+  padding-bottom: 5px;
 }
