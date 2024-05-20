@@ -43,7 +43,7 @@ body {
     padding-bottom: 20px;
   }
   
-  input[type=text] {
+  input[type=text], textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -52,12 +52,6 @@ body {
     box-sizing: border-box;
   }
 
-  #message {
-
-    height: 400px;
-    vertical-align: top;
-    
-  }
   
   button {
     background-color: rgb(170, 0, 0);
