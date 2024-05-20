@@ -51,6 +51,13 @@ body {
     border: 1px solid #ccc;
     box-sizing: border-box;
   }
+
+  #message {
+
+    height: 400px;
+    vertical-align: top;
+    
+  }
   
   button {
     background-color: rgb(170, 0, 0);
