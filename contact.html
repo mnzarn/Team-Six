@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Contact Us</title>
-        <link rel="stylesheet" href="signUp.css">
+        <link rel="stylesheet" href="contact.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     </head>
     <body>
@@ -42,59 +42,30 @@
 
       <div class="page-container">
 
-        <nav class="navbar bg-body-tertiary">
-          <div class="container">
-            <span class="h1">Welcome to TravelSU!</span>
-          </div>
-        </nav>
 
-        <!-- <form class="signUp" id="signUpForm" action="logged_in.html" method="post">
-          <section class="container">
-              <label for="suID"><b>SeattleU ID</b></label>
-              <input type="text" placeholder="Enter SeattleU ID" name="suID" id="suID" required>
-              <span class="error" id="suIDError"></span><br>
-  
-              <label for="suEmail"><b>SeattleU Email</b></label>
-              <input type="text" placeholder="Enter SeattleU Email" name="suEmail" id="suEmail" required>
-              <span class="error" id="suEmailError"></span><br>
-  
-              <label for="fname"><b>First Name</b></label>
-              <input type="text" placeholder="Enter First Name" name="fname" id="fname" required>
-              <span class="error" id="fnameError"></span><br>
-  
-              <label for="lname"><b>Last Name</b></label>
-              <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required>
-              <span class="error" id="lnameError"></span><br>
-  
-              <label for="uname"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
-              <span class="error" id="unameError"></span><br>
-  
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-              <span class="error" id="pswError"></span><br>
-  
-              <label for="rePsw"><b>Re-enter Password</b></label>
-              <input type="password" placeholder="Re-enter Password" name="rePsw" id="rePsw" required>
-              <span class="error" id="rePswError"></span><br>
-  
-              <label for="driver"><b>Will you be driving? (Can be changed later in Account)</b></label><br>
-              <div class="form-check form-check-inline" id="check">
-                  <input class="form-check-input" type="checkbox" id="driver" value="option2">
-                  <label class="form-check-label" for="driver">Driver</label>
-              </div><br>
-              <button type="submit">Sign Up</button>
-          </section>
-      </form>   -->
 
-      <form action="mailto:kgavrilova@seattleu.edu" method="POST" enctype="multipart/form-data" name="EmailForm">
-        Name:<br>
-        <input type="text" size="19" name="Contact-Name"><br><br>
-        Email:<br>
-        <input type="email" name="Contact-Email"><br><br>
-        Message:<br>
-        <textarea name="Contact-Message" rows="6" cols="20"></textarea><br><br>
-        <button type="submit" value="Submit">Send</button>
+      <!-- <form class="contactUs" id="contactForm" action="mailto:kgavrilova@seattleu.edu" method="POST" enctype="multipart/form-data" name="EmailForm"> -->
+        <form class="contactUs" id="contactForm">
+        <section class="container">
+          <h1>Send Us an Email</h1>
+          <label for="fname"><b>First Name:</b></label>
+          <input type="text" placeholder="Enter First Name" name="fname" id="fname" required>
+          <span class="error" id="fnameError"></span><br>
+
+          <label for="lname"><b>Last Name:</b></label>
+          <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required>
+          <span class="error" id="lnameError"></span><br>
+
+          <label for="suEmail"><b>SeattleU Email:</b></label>
+          <input type="text" placeholder="Enter SeattleU Email" name="suEmail" id="suEmail" required>
+          <span class="error" id="suEmailError"></span><br>
+
+          <label for="message"><b>Message:</b></label>
+          <input type="text" placeholder="Enter Message" name="message" id="message" required>
+          <span class="error" id="messageError"></span><br>
+
+          <button type="submit">Send</button>
+      </section>
     </form>
 
       </div>

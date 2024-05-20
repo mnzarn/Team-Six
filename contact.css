@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.page-container {
+    background-color: #dc3545;
+    min-height: 100vh;
+  }
+  
+  .logo {
+      height: 65px;
+      width: 250px;
+  }
+  
+  .contactUs {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid rgb(170, 0, 0);
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  .contactUs h1 {
+    color: rgb(170, 0, 0);
+    text-align: center;
+}
+  .error {
+    color: rgb(255, 208, 0);
+  }
+  .container {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .contactUs .container {
+    padding-bottom: 20px;
+  }
+  
+  #check {
+    padding-bottom: 20px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: rgb(170, 0, 0);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: rgb(139, 0, 0);
+  }
+  
+  /* NEED THESE FOR FOOTER TO LOOK PROPER SO COPY PASTE THESE FOR FOOTER */
+  
+  .footer {
+    padding-top: 20px;
+    border-top: 2px solid black;
+  }
+  .footer #logo{
+    padding-bottom: 5px;
+  }
