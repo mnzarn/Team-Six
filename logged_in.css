@@ -1,4 +1,3 @@
-
 h1 {
     color: #343a40;
     font-weight: bold;
@@ -13,3 +12,14 @@ h1 {
 }
 
 /* Carousels */
+
+#routeCarousel {
+    max-width: 1400px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the carousel horizontally */
+    justify-content: center;
+  }
+
+#routeCarousel .card {
+    margin: 5%;
+
+}
