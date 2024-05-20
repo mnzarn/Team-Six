@@ -3,56 +3,121 @@
 <head>
     <title>Request a Ride</title>
     <link rel="stylesheet" href="ride.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <section class="h_container" id="header">
-        <a href="index.html" id="logo">
-            <img class="logo" src="TRAVELSU_Logo.PNG" alt="Travel SU Logo">
-        </a>
-        <button type="button" id="login_button">Login</button>
-    </section>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="images/TRAVELSU_Logo.PNG" alt="TravelSU logo" width="160" height="40"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="ride.html">Ride</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="drive.html">Drive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <form action="login.html" method="post" class="d-flex">
+            <button class="btn btn-danger" type="submit">
+              <img src="images/loginguy.png" alt="Placeholder profile picture (gray person outline)" width="25" height="25">
+              Login
+            </button>
+          </form>
+        </div>
+      </nav>
 
-    <section class="request-ride-form">
-        <h1>Request a Ride</h1>
-        <form>
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" required>
+    <div class="page-container">
+        <section class="request-ride-form">
+            <h1>Request a Ride</h1>
+            <form>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
 
-            <label for="pickup-zip">Pickup Zip Code:</label>
-            <input type="text" id="pickup-zip" name="pickup-zip" required>
+                <label for="pickup-zip">Pickup Zip Code:</label>
+                <input type="text" id="pickup-zip" name="pickup-zip" required>
 
-            <label for="pickup-area">Pickup Area Name:</label>
-            <input type="text" id="pickup-area" name="pickup-area" required>
+                <label for="pickup-area">Pickup Area Name:</label>
+                <input type="text" id="pickup-area" name="pickup-area" required>
 
-            <label for="time-frame">Time Frame:</label>
-            <input type="time" id="earliest-time" name="earliest-time" required>
-            <input type="time" id="latest-time" name="latest-time" required>
+                <label for="time-frame">Time Frame:</label>
+                <input type="time" id="earliest-time" name="earliest-time" required>
+                <input type="time" id="latest-time" name="latest-time" required>
 
-            <label for="destination-zip">Destination Zip Code:</label>
-            <input type="text" id="destination-zip" name="destination-zip" value="98122" required>
+                <label for="destination-zip">Destination Zip Code:</label>
+                <input type="text" id="destination-zip" name="destination-zip" value="98122" required>
 
-            <fieldset>
-                <legend>Recurring Ride:</legend>
-                <input type="checkbox" id="recurring-ride" name="recurring-ride">
-                <label for="recurring-ride">Recurring Ride</label>
-            </fieldset>
+                <fieldset>
+                    <legend>Recurring Ride:</legend>
+                    <input type="checkbox" id="recurring-ride" name="recurring-ride">
+                    <label for="recurring-ride">Recurring Ride</label>
+                </fieldset>
 
-            <fieldset>
-                <legend>Preferences:</legend>
-                <input type="checkbox" id="no-smoker" name="no-smoker">
-                <label for="no-smoker">No Smoker</label><br>
-                <input type="checkbox" id="no-pets" name="no-pets">
-                <label for="no-pets">No Pets</label><br>
-                <label for="gender">Preferred Gender:</label>
-                <select id="gender" name="gender">
-                    <option value="any">Any</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-            </fieldset>
+                <fieldset>
+                    <legend>Preferences:</legend>
+                    <input type="checkbox" id="no-smoker" name="no-smoker">
+                    <label for="no-smoker">No Smoker</label><br>
+                    <input type="checkbox" id="no-pets" name="no-pets">
+                    <label for="no-pets">No Pets</label><br>
+                    <label for="gender">Preferred Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="any">Any</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </fieldset>
 
-            <button type="submit" id="submit-button">Submit</button>
-        </form>
-    </section>
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
+        </section>
+    </div>
+    <!-- Check the CSS file for footer specific styling!!! -->
+    <footer class="bg-light text-center ">
+        <div class="container p-4">
+
+          <section class="mb-4">
+            <p>
+              TravelSU is all about creating an easier way to ride-share when it comes to SeattleU students.
+              Public transportation doesn't always go where you need to or the stops might become a nuisance.
+              Ride-sharing apps have very high prices, especially in Seattle. With all this, it's hard to get
+              to the places you need to as a student. With TravelSU, we hope to save students some money by
+              providing rides to places other students may already be going. We also ensure the safety 
+              of all of our users.
+            </p>
+          </section>
+
+          <section class="footer">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a href="index.html"><img id="logo" src="images/TRAVELSU_Logo.PNG" alt="TravelSU logo" width="120" height="30"></a>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a href="Under_Construction.html">Have Questions?</a>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a href="aboutUs.html">About Us</a>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a href="https://github.com/mnzarn/TravelSU-WebApp">GitHub</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
