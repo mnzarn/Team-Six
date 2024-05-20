@@ -46,6 +46,14 @@ h1 {
 
 /* NEED THESE FOR FOOTER TO LOOK PROPER SO COPY PASTE THESE FOR FOOTER */
 
+footer .bg-light .text-center #footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+
 .footer {
     padding-top: 20px;
     border-top: 2px solid black;

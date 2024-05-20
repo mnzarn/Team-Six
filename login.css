@@ -156,13 +156,17 @@ span.password {
   font-size: 20px;
 }
 
+#accountSettings {
+  text-align: left;
+}
+
 /* NEED THESE FOR FOOTER TO LOOK PROPER SO COPY PASTE THESE FOR FOOTER */
 
 .footer {
   padding-top: 20px;
   border-top: 2px solid black;
 }
-.footer #logo{
+.footer #logo {
   padding-bottom: 5px;
 }
 
