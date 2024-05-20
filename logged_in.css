@@ -29,3 +29,17 @@ h1 {
     width: 100%;
     /* object-fit: cover; */
 }
+
+#routesCarousel .btn .btn-primary {
+    padding-bottom: 1vw;
+}
+
+#routesPrev, #routesNext  
+{
+    width: 5%;
+    height: 10%;
+    color:#343a40;
+    margin: auto;
+    padding: 1%;
+}
+    
