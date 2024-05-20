@@ -165,3 +165,32 @@ span.password {
 .footer #logo{
   padding-bottom: 5px;
 }
+
+.aboutUs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.aboutUs .image {
+  flex: 1;
+  margin-right: 20px;
+}
+.aboutUs .image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.aboutUs .blurb {
+  flex: 2;
+}
+
+.aboutTravelSU {
+  border: 2px solid rgb(82, 75, 75);;
+  padding: 20px;
+  border-radius: 10px;
+  background-color:  lightgray;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
