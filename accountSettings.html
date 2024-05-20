@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Login</title>
+        <title>Account Settings</title>
         <link rel="stylesheet" href="login.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     </head>
     <body>
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-body-tertiary">
             <div class="container">
-              <a class="navbar-brand" href="index.html"><img src="images/TRAVELSU_Logo.PNG" alt="TravelSU logo" width="160" height="40"></a>
+              <a class="navbar-brand" href="loggedIn.html"><img src="images/TRAVELSU_Logo.PNG" alt="TravelSU logo" width="160" height="40"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link active" href="loggedIn.html">Your Feed</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="ride.html">Ride</a>
@@ -31,46 +31,37 @@
                   </li>
                 </ul>
               </div>
-              <form action="login.html" method="post" class="d-flex">
-                <button class="btn btn-danger" type="submit">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle btn-danger" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <img src="images/loginguy.png" alt="Placeholder profile picture (gray person outline)" width="25" height="25">
-                  Login
+                  Account
                 </button>
-              </form>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="accountSettings.html">Account Settings</a>
+                  <a class="dropdown-item" href="index.html">Log Out</a>
+                </div>
+              </div>
             </div>
           </nav>
-    
-    <div class="page-container">
-        <nav class="navbar bg-body-tertiary">
-            <div class="container" id="header">
-              <span class="h1">Welcome to TravelSU!</span>
+
+        <div class="page-container">
+            <br>
+            <div class="aboutTravelSU">
+                <h1>Account Settings</h1>
+                <p>
+                  Username: TestUser123
+                </p>
+                <p>
+                  Password: *******
+                </p>
+                <p>
+                  SU ID: 123456789
+                </p>
             </div>
-        </nav>
+            <br>
 
-        <form action="loggedIn.html" method="post">
-          
-            <section class="container" id="login">
-              <label for="uname"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="uname" required>
-          
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-              <button type="submit">Login</button>
-              <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-              </label>
-            </section>
-        </form>
-
-        <section class="bottomLogin">
-            <a href="index.html">
-              <button type="button" class="cancelbtn">Cancel</button>
-            </a>
-            <p>Don't have an account? Sign up <a href="signUp.html">here!</a></p>
-            <p>Forgot <a href="Under_Construction.html">password?</a></p>
-        </section>
-        
         </div>
+
         <!-- Check the CSS file for footer specific styling!!! -->
         <footer class="bg-light text-center ">
             <div class="container p-4">
