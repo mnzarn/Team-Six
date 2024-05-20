@@ -13,13 +13,7 @@ h1 {
 
 /* Carousels */
 
-#routeCarousel {
-    max-width: 1400px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the carousel horizontally */
-    justify-content: center;
-  }
-
-#routeCarousel .card {
+#routesCarousel .card, #communityCarousel .card {
     margin: 5%;
     border: 1px white;
 
@@ -35,7 +29,7 @@ h1 {
     padding-bottom: 1vw;
 }
 
-#routesPrev, #routesNext  
+#routesPrev, #routesNext, #communityPrev, #communityNext  
 {
     width: 5%;
     height: 10%;
