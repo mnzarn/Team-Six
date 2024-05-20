@@ -34,12 +34,16 @@
               </li>
             </ul>
           </div>
-          <form action="login.html" method="post" class="d-flex">
-            <button class="btn btn-danger" type="submit" href="login.html">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img src="images/loginguy.png" alt="Placeholder profile picture (gray person outline)" width="25" height="25">
               Account
             </button>
-          </form>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Account Settings</a>
+              <a class="dropdown-item" href="index.html">Log Out</a>
+            </div>
+          </div>
         </div>
       </nav>
       <div class="page-container" id="searchBar">
