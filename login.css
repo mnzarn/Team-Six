@@ -194,3 +194,7 @@ span.password {
   text-align: center;
   margin: auto;
 }
+
+.image {
+  border: 2px solid rgb(82, 75, 75);
+}
