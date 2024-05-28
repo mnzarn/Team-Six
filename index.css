@@ -70,3 +70,11 @@
   padding-bottom: 5px;
 }
 
+.link-light {
+  color: #f8f9fa;
+}
+
+.link-light:hover {
+  color: #dc3545;
+}
+
