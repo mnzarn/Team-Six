@@ -50,41 +50,59 @@
           </div>
         </nav>
 
-        <form class="signUp" id="signUpForm" action="loggedIn.html" method="post">
+<form class="signUp" id="signUpForm" action="loggedIn.html" method="post">
           <section class="container">
-              <label for="suID"><b>SeattleU ID</b></label>
-              <input type="text" placeholder="Enter SeattleU ID" name="suID" id="suID" required>
-              <span class="error" id="suIDError"></span><br>
-  
-              <label for="suEmail"><b>SeattleU Email</b></label>
-              <input type="text" placeholder="Enter SeattleU Email" name="suEmail" id="suEmail" required>
-              <span class="error" id="suEmailError"></span><br>
-  
-              <label for="fname"><b>First Name</b></label>
-              <input type="text" placeholder="Enter First Name" name="fname" id="fname" required>
-              <span class="error" id="fnameError"></span><br>
-  
-              <label for="lname"><b>Last Name</b></label>
-              <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required>
-              <span class="error" id="lnameError"></span><br>
-  
-              <label for="uname"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
-              <span class="error" id="unameError"></span><br>
-  
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-              <span class="error" id="pswError"></span><br>
-  
-              <label for="rePsw"><b>Re-enter Password</b></label>
-              <input type="password" placeholder="Re-enter Password" name="rePsw" id="rePsw" required>
-              <span class="error" id="rePswError"></span><br>
-  
-              <label for="driver"><b>Will you be driving? (Can be changed later in Account)</b></label><br>
-              <div class="form-check form-check-inline" id="check">
-                  <input class="form-check-input" type="checkbox" id="driver" value="option2">
-                  <label class="form-check-label" for="driver">Driver</label>
-              </div><br>
+            <div class="row">
+              <div class="col">
+                <label for="suID"><b>SeattleU ID</b></label>
+                <input type="text" placeholder="Enter SeattleU ID" name="suID" id="suID" required>
+                <span class="error" id="suIDError"></span><br>
+              </div>
+              <div class="col">
+                <label for="suEmail"><b>SeattleU Email</b></label>
+                <input type="text" placeholder="Enter SeattleU Email" name="suEmail" id="suEmail" required>
+                <span class="error" id="suEmailError"></span><br>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="fname"><b>First Name</b></label>
+                <input type="text" placeholder="Enter First Name" name="fname" id="fname" required>
+                <span class="error" id="fnameError"></span><br>
+              </div>
+              <div class="col">
+                <label for="lname"><b>Last Name</b></label>
+                <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required>
+                <span class="error" id="lnameError"></span><br>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+                <span class="error" id="unameError"></span><br> 
+              </div>
+              <div class="col">
+                <label for="driver"><b>Will you be driving? (Can be changed later in Account)</b></label><br>
+                <select class="form-select lgSelect" aria-label="driverSelect">
+                  <option selected>Select...</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                <span class="error" id="pswError"></span><br>
+              </div>
+              <div class="col">
+                <label for="rePsw"><b>Re-enter Password</b></label>
+                <input type="password" placeholder="Re-enter Password" name="rePsw" id="rePsw" required>
+                <span class="error" id="rePswError"></span><br>
+              </div>
+            </div><br>
               <button type="submit">Sign Up</button>
           </section>
       </form>  
