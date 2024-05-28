@@ -51,6 +51,14 @@ button:hover {
   background-color: rgb(139, 0, 0);
 }
 
+.lgSelect {
+  padding: 12px 20px;
+  font-size: 1.25rem;
+  border-radius: var(--bs-border-radius-lg);
+  width: 100%;
+  margin: 8px 0;
+}
+
 /* NEED THESE FOR FOOTER TO LOOK PROPER SO COPY PASTE THESE FOR FOOTER */
 
 .footer {
