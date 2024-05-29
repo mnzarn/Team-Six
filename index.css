@@ -75,6 +75,23 @@
 }
 
 .link-light:hover {
+  padding: 20px;
   color: #dc3545;
 }
-
+.containerinfo{
+  background-color: #dc3545;
+}
+.information-alert {
+  background-color: #dc3545;
+  color: rgb(255, 255, 255); 
+  padding: 20px;
+  
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;  
+}
