@@ -1,0 +1,22 @@
+[
+    {
+        "title":"Chardin Hall to Uwajimaya, Seattle",
+        "datetime":"6:00pm May 20th, 2024",
+        "text":"Start: Chardin Hall, Seattle University, Chardin Hall, 1020, 5336, E Jefferson St, Seattle, WA 98122<br>End: Uwajimaya Seattle, 600 5th Ave S, Seattle, WA 98104",
+        "imgURL": "images/route1.png"
+    },
+    {
+        "title":"Seattle University to Girl in Red Concert",
+        "datetime":"7:30pm May 20th, 2024",
+        "text":"Start: 901 12th Ave, Seattle, WA 98122<br> End: 911 Pine St Seattle, WA 98101",
+        "imgURL": "images/route2.png"
+    
+    },
+    {
+        "title":"Bellevue Square to Seattle University",
+        "datetime":"8:00pm May 21st, 2024",
+        "text":"Start: Bellevue Square, 575 Bellevue Square, Bellevue, WA 98004<br> End: 901 12th Ave, Seattle, WA 98122",
+        "imgURL": "images/route3.png"
+    
+    }
+]
