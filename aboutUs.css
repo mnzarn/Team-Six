@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .aboutContainer {
+    padding: 0 16px;
+  }
+  
+  .aboutContainer h2 {
+    text-align: center;
+  }
+  
+  .aboutContainer p {
+    text-align: center;
+  }
+  .aboutContainer::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+
+
+.page-container {
+  background-color: #dc3545;
+}
+
+
+/* NEED THESE FOR FOOTER TO LOOK PROPER SO COPY PASTE THESE FOR FOOTER */
+
+.footer {
+  padding-top: 20px;
+  border-top: 2px solid black;
+}
+.footer #logo {
+  padding-bottom: 5px;
+}
+
+.link-light {
+  color: #f8f9fa;
+}
+
+.link-light:hover {
+  color: #dc3545;
+}
+
+
