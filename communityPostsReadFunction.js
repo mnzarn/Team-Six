@@ -35,11 +35,11 @@ let carouselInner = `
 
 
 let carouselButtons = `
-<button class="carousel-control-prev" id="routesPrev" type="button" data-bs-target="#routesCarousel" data-bs-slide="prev">
+<button class="carousel-control-prev" id="communityPrev" type="button" data-bs-target="#communityCarousel" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
 </button>
-<button class="carousel-control-next" id="routesNext" type="button" data-bs-target="#routesCarousel" data-bs-slide="next">
+<button class="carousel-control-next" id="communityNext" type="button" data-bs-target="#communityCarousel" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
 </button>
@@ -52,26 +52,26 @@ carousel.innerHTML += carouselButtons;
 // Now that the carousel exists, go through the routes data and populate carousel slides with cards.
 let rows = carousel.getElementsByClassName("row");
 
-let dataIndex = 0;
-for(let i = 0; i < rows.length; ++ i) {
-    for(let j = 0; j < cardsPerSlide; ++j) {
-        let current = data[dataIndex];
-        let card = `
-            <div class="col d-flex justify-content-center">
-                <div class="card" style="width: 24rem;">
-                    <img src=${current.imgURL} class="card-img-top" alt="Map image of ${current.title}">
-                    <div class="card-body">
-                        <h5 class="card-title">${current.title}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">${current.datetime}</h6>
-                        <p class="card-text">${current.text}</p>
-                        <a href="#" class="btn btn-primary" onclick="notImplemented()">Book this ride</a>
-                    </div>
+let rowsIndex = 0;
+for(let i = 0; i < data.length; ++ i) {
+    let current = data[i];
+    let card = `
+        <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 24rem;">
+                <div class="card-body">
+                    <h5 class="card-title">${current.title}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">${current.datetime}</h6>
+                    <p class="card-text">${current.text} </p>
+                    <a href="#" class="card-link" onclick="notImplemented()">Comment</a>
                 </div>
-            </div>  
-        `;
+            </div>
+        </div>
+    `;
 
-        rows[i].innerHTML += card;
-
-        ++dataIndex;
+    // Populate the first slide, then move on to the next when first cardsPerSlide number of cards are done. 
+    if(i % cardsPerSlide == 0 && i != 0) {
+        ++rowsIndex;
     }
+
+    rows[rowsIndex].innerHTML += card;
 }

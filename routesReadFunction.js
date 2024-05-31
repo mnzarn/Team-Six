@@ -69,12 +69,15 @@ for(let i = 0; i < data.length; ++ i) {
         </div>  
     `;
 
-    if(i % 3 == 0 && i != 0) {
+    // Populate the first slide, then move on to the next when first cardsPerSlide number of cards are done. 
+    if(i % cardsPerSlide == 0 && i != 0) {
         ++rowsIndex;
     }
 
     rows[rowsIndex].innerHTML += card;
 }
+
+// Code below only works if data.length % slidesNeeded == 0. 
 
 // let dataIndex = 0;
 // for(let i = 0; i < rows.length; ++ i) {
