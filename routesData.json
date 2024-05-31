@@ -18,5 +18,27 @@
         "text":"Start: Bellevue Square, 575 Bellevue Square, Bellevue, WA 98004<br> End: 901 12th Ave, Seattle, WA 98122",
         "imgURL": "images/route3.png"
     
+    },
+    {
+        "title":"Seattle University to Discovery Park",
+        "datetime":"9:00am May 22nd, 2024",
+        "text":"Start: 901 12th Ave, Seattle, WA 98122<br>End: 3801 Discovery Park Blvd, Seattle, WA 98199",
+        "imgURL": "images/route4.png"
+    
+    },
+    {
+        "title":"Murphy Apartments to The Kid LAROI Concert",
+        "datetime":"7:30pm May 22nd, 2024",
+        "text":"Start: Murphy Apartments, 1001 E James Way, Seattle, WA 98122<br> End: 1700 1st Ave S, Seattle, WA 98134",
+        "imgURL": "images/route5.png"
+    
+    },
+    {
+        "title":"Seattle University to Kerry Park",
+        "datetime":"11:00am May 23rd, 2024",
+        "text":"Start: 901 12th Ave, Seattle, WA 98122<br> End: Kerry Park, 211 W Highland Dr, Seattle, WA 98119",
+        "imgURL": "images/route6.png"
+    
     }
+
 ]
