@@ -54,6 +54,7 @@ let rows = carousel.getElementsByClassName("row");
 
 let rowsIndex = 0;
 for(let i = 0; i < data.length; ++ i) {
+    let current = data[i];
     let card = `
         <div class="col d-flex justify-content-center">
             <div class="card" style="width: 24rem;">
