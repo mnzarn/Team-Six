@@ -79,10 +79,10 @@
   color: #dc3545;
 }
 .containerinfo{
-  background-color: #dc3545;
+  background-color: rgb(170,0,0);
 }
 .information-alert {
-  background-color: #dc3545;
+  background-color: rgb(170,0,0);
   color: rgb(255, 255, 255); 
   padding: 20px;
   
