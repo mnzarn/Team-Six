@@ -178,35 +178,54 @@ span.password {
   color: #dc3545;
 }
 
-.aboutUs {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-.aboutUs .image {
-  flex: 1;
-  margin-right: 20px;
-}
-.aboutUs .image img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-.aboutUs .blurb {
-  flex: 2;
+
+html {
+  box-sizing: border-box;
 }
 
-.aboutTravelSU {
-  border: 2px solid rgb(82, 75, 75);;
-  padding: 20px;
-  border-radius: 10px;
-  background-color:  #C9CDD3;
-  width: 90%;
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
   text-align: center;
-  margin: auto;
+  background-color: #343a40;
+  color: white;
 }
 
-.image {
-  border: 2px solid rgb(82, 75, 75);
+.aboutContainer {
+  padding: 0 16px;
+}
+
+.aboutContainer h2 {
+  text-align: center;
+}
+
+.aboutContainer p {
+  text-align: center;
+}
+.aboutContainer::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
 }
