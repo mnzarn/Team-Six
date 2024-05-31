@@ -43,6 +43,7 @@
           </nav>
     
     <div class="page-container">
+      <div class="body">
         <nav class="navbar bg-body-tertiary">
             <div class="container" id="header">
               <span class="h1">Welcome to TravelSU!</span>
@@ -50,62 +51,62 @@
         </nav>
 
         <form action="loggedIn.html" method="post">
-          
-            <section class="container" id="login">
-              <label for="uname"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
-          
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-              <button type="submit">Login</button>
-              <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-              </label>
-            </section>
-        </form>
+          <section class="container" id="login">
 
-        <section class="bottomLogin">
-            <a href="index.html">
-              <button type="button" class="cancelbtn">Cancel</button>
-            </a>
-            <p>Don't have an account? Sign up <a href="signUp.html">here!</a></p>
-            <p>Forgot <a href="Under_Construction.html">password?</a></p>
-        </section>
-        
-        </div>
-        <!-- Check the CSS file for footer specific styling!!! -->
-        <footer class="bg-dark text-light text-center ">
-            <div class="container p-4">
-    
-              <section class="mb-4">
-                <p>
-                  TravelSU is all about creating an easier way to ride-share when it comes to SeattleU students.
-                  Public transportation doesn't always go where you need to or the stops might become a nuisance.
-                  Ride-sharing apps have very high prices, especially in Seattle. With all this, it's hard to get
-                  to the places you need to as a student. With TravelSU, we hope to save students some money by
-                  providing rides to places other students may already be going. We also ensure the safety 
-                  of all of our users.
-                </p>
-              </section>
-    
-              <section class="footer">
-                <div class="row">
-                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <a href="index.html"><img id="logo" src="images/TRAVELSU_Logo.PNG" alt="TravelSU logo" width="120" height="30"></a>
-                  </div>
-                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <a class="link-light" href="contact.html">Have Questions?</a>
-                  </div>
-                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <a class="link-light" href="aboutUs.html">About Us</a>
-                  </div>
-                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <a class="link-light" href="https://github.com/mnzarn/TravelSU-WebApp">GitHub</a>
-                  </div>
-                </div>
-              </section>
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required><br>
+
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+
+            <button class="loginBtn" type="submit">Login</button>
+            <div class="row">
+              <div class="col">
+                <p>Sign up <a href="signUp.html">here!</a></p>
+              </div>
+              <div class="col forgotPass">
+                <p>Forgot <a href="Under_Construction.html">password?</a></p>
+              </div>
             </div>
-          </footer>    
+          </section>
+        </form>
+      </div>
+    </div>
+    <!-- Check the CSS file for footer specific styling!!! -->
+    <footer class="bg-dark text-light text-center ">
+        <div class="container p-4">
+
+          <section class="mb-4">
+            <p>
+              TravelSU is all about creating an easier way to ride-share when it comes to SeattleU students.
+              Public transportation doesn't always go where you need to or the stops might become a nuisance.
+              Ride-sharing apps have very high prices, especially in Seattle. With all this, it's hard to get
+              to the places you need to as a student. With TravelSU, we hope to save students some money by
+              providing rides to places other students may already be going. We also ensure the safety 
+              of all of our users.
+            </p>
+          </section>
+
+          <section class="footer">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a href="index.html"><img id="logo" src="images/TRAVELSU_Logo.PNG" alt="TravelSU logo" width="120" height="30"></a>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a class="link-light" href="contact.html">Have Questions?</a>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a class="link-light" href="aboutUs.html">About Us</a>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a class="link-light" href="https://github.com/mnzarn/TravelSU-WebApp">GitHub</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </footer>    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>

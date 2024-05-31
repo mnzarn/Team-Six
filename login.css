@@ -100,36 +100,27 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-button {
+.loginBtn {
   background-color: rgb(170, 0, 0);
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 16px 0;
   border: none;
   cursor: pointer;
   width: 100%;
 }
 
-button:hover {
+.loginBtn:hover {
   opacity: 0.8;
 }
 
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: rgb(170, 0, 0);
+.col p {
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.bottomLogin {
-  padding: 16px;
-  background-color: #343a40;
-  justify-content: space-between; /* Adjust as needed */
-  align-items: center;
-  display: flex;
-  margin-bottom: 0; 
-  margin-top: 140px;
-  color: #9199a1;
-  border-top: 1px solid black;
+.forgotPass {
+  text-align: end;
 }
 
 span.password {
@@ -149,7 +140,13 @@ span.password {
 
 .page-container {
   background-color: #dc3545;
-  min-height: 60vh;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.body {
+  max-width: 800px;
 }
 
 #login {
